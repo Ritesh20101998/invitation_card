@@ -482,7 +482,7 @@
     .bell-bottom-left,
     .bell-bottom-right {
         bottom: 12px;
-        font-size: 40px;
+        /* font-size: 40px; */
     }
 
     .bell-top-left,

@@ -1,0 +1,662 @@
+/* InvitationCard.css - Golden Aesthetic without Borders */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.invitation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: #ffffff;
+}
+
+/* Main Card */
+.invitation-card {
+    font-family: "Mukta", sans-serif;
+    line-height: 1.75;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    font-size: 18px;
+    background: linear-gradient(135deg, #f2f2f2 0%, #e6e6e6 60%, #d4d0c8 100%);
+    border: 16px solid #9f7a32;
+    box-shadow:
+    0 0 0 6px #ffffff inset,
+    0 16px 42px rgba(0, 0, 0, 0.30);
+    border-radius: 24px;
+    padding: 40px 25px;
+    /* box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25),
+                0 0 40px rgba(212, 81, 26, 0.2); */
+    overflow: hidden;
+}
+
+/* Inner Border with Background */
+.inner-border {
+    position: relative;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 20px 15px;
+    font-family: "'Noto Sans Devanagari', 'Segoe UI', Tahoma, sans-serif";
+    color: #4e342e;
+    overflow: visible;
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Bells - Positioned Corners */
+.bell {
+    position: absolute;
+    font-size: 52px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+    opacity: 1;
+    z-index: 10;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.bell:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 6px rgba(184, 150, 63, 0.6));
+}
+
+
+
+.bell-top-left {
+    top: 12px;
+    left: 20px;
+}
+
+.bell-top-right {
+    top: 12px;
+    right: 20px;
+}
+
+.bell-bottom-left {
+    bottom: 20px;
+    left: 20px;
+}
+
+.bell-bottom-right {
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Ganesh Section */
+.ganesh-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: none;
+}
+
+.ganesh-image {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 6px solid #ffb700;
+    padding: 10px;
+    background: white;
+    box-shadow: 0 12px 30px rgba(212, 81, 26, 0.25),
+                inset 0 2px 4px rgba(255, 183, 0, 0.4);
+    object-fit: cover;
+}
+
+/* Mantras Section */
+.mantras-section {
+    font-family: "Noto Serif Devanagari", serif;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: none;
+}
+
+.mantra {
+    color: #0066cc;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 8px 0;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    word-spacing: 3px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+/* Title Section */
+.title-section {
+    text-align: center;
+    margin: 8px 0 10px 0;
+    padding: 6px 0;
+}
+
+.title {
+    color: #0066cc;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+    line-height: 1.4;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Section */
+.content-section {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0 12px;
+}
+
+.introduction {
+    font-size: 19px;
+    line-height: 1.9;
+    margin-bottom: 10px;
+    color: #3e2723;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+}
+.introduction strong {
+    font-weight: 600;
+}
+
+.event-name {
+    font-family: "Noto Serif Devanagari", serif;
+    color: #0066cc;
+    font-weight: 800;
+    font-size: 26px;
+    display: block;
+    margin: 10px 0;
+    letter-spacing: 0.6px;
+    line-height: 1.4;
+}
+
+/* Event Details - No Border */
+.event-details {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 8px 12px;
+    margin: 22px 0;
+    max-width: 700px;
+    box-shadow: none;
+    font-size: 22px;
+}
+
+.detail-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+    margin: 12px 0;
+    font-size: 18px;
+    gap: 8px;
+    line-height: 1.7;
+}
+
+.detail-icon {
+    display: none;
+}
+
+.detail-label {
+    font-weight: 800;
+    color: #9f7a32;
+    display: inline;
+    letter-spacing: 0.4px;
+    font-size: 21px;
+}
+
+.detail-value {
+    color: #3e2723;
+    font-weight: 600;
+    display: inline;
+    font-size: 18px;
+}
+
+.venue-text {
+    word-break: break-word;
+    line-height: 1.7;
+    display: block;
+    margin-top: 6px;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* Hosts Section - No Border */
+.hosts-section {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 8px 12px;
+    margin: 6px auto;
+    max-width: 700px;
+    box-shadow: none;
+}
+
+.hosts-label {
+    font-size: 21px;
+    font-weight: 800;
+    color: #9f7a32;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.hosts-name {
+    font-size: 19px;
+    color: #2c1810;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.3px;
+}
+
+/* Request Box - No Border */
+.request-box {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 8px 12px;
+    margin: 8px auto;
+    margin-top: 26px;
+    opacity: 0.9;
+    text-align: center;
+    font-size: 19px;
+    color: #3e2723;
+    line-height: 1.8;
+    text-align: center;
+    font-weight: 600;
+    max-width: 700px;
+    box-shadow: none;
+    letter-spacing: 0.3px;
+}
+
+/* Button Section */
+.button-section {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+/* Map Button */
+.map-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+    color: white;
+    padding: 14px 22px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 700;
+    box-shadow: 0 6px 16px rgba(39, 174, 96, 0.4),
+                0 2px 4px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.4px;
+}
+
+.map-button:hover {
+    background: linear-gradient(135deg, #229954 0%, #1e8449 100%);
+    box-shadow: 0 8px 22px rgba(39, 174, 96, 0.5),
+                0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.map-button:active {
+    box-shadow: 0 4px 10px rgba(39, 174, 96, 0.3),
+                0 1px 2px rgba(0, 0, 0, 0.15);
+    transform: translateY(0);
+}
+
+/* ===== TABLET RESPONSIVE (max-width: 768px) ===== */
+@media (max-width: 768px) {
+    .invitation-container {
+        padding: 30px 15px;
+        min-height: auto;
+    }
+
+    .invitation-card {
+        border: 14px solid #d4511a;
+        padding: 32px 20px;
+        max-width: 100%;
+        border-radius: 28px;
+        background: linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #ffc700 100%);
+    }
+
+    .inner-border {
+        padding: 28px;
+        
+    }
+
+    .bell {
+        font-size: 22px;
+    }
+
+    .bell-top-left,
+    .bell-top-right {
+        top: 10px;
+    }
+
+    .bell-bottom-left,
+    .bell-bottom-right {
+        bottom: 15px;
+    }
+
+    .ganesh-section {
+        margin-bottom: 20px;
+        padding-bottom: 14px;
+    }
+
+    .ganesh-image {
+        width: 120px;
+        height: 120px;
+        border: 5px solid #ffb700;
+    }
+
+    .mantras-section {
+        margin-bottom: 18px;
+        padding-bottom: 14px;
+    }
+
+    .mantra {
+        font-family: "Noto Serif Devanagari", serif;
+        font-size: 20px;
+        letter-spacing: 0.8px;
+        margin: 7px 0;
+        line-height: 1.6;
+    }
+
+    .title-section {
+        margin: 28px 0 20px;
+        padding: 10px 0;
+    }
+
+    .title {
+        font-size: 38px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+    .introduction {
+        font-size: 18px;
+        line-height: 1.8;
+        margin-bottom: 16px;
+    }
+
+    .event-name {
+        font-size: 24px;
+        margin: 8px 0;
+    }
+
+    .content-section {
+        margin-bottom: 16px;
+        margin-top: 18px;
+        padding: 0 10px;
+    }
+
+    .event-details {
+        padding: 14px 16px;
+        margin: 12px auto;
+    }
+
+    .detail-item {
+        font-size: 17px;
+        margin: 10px 0;
+    }
+
+    .detail-label {
+        font-size: 21px;
+    }
+
+    .detail-value {
+        font-size: 17px;
+    }
+
+    .venue-text {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .hosts-label {
+        font-size: 19px;
+        margin-bottom: 7px;
+    }
+
+    .hosts-name {
+        font-size: 18px;
+    }
+
+    .request-box {
+        font-size: 18px;
+        padding: 14px 16px;
+        margin: 16px auto;
+    }
+
+    .map-button {
+        padding: 13px 30px;
+        font-size: 18px;
+    }
+}
+
+/* ===== MOBILE RESPONSIVE (max-width: 480px) ===== */
+@media (max-width: 480px) {
+    .invitation-container {
+        padding: 20px 12px;
+        min-height: auto;
+    }
+
+    .invitation-card {
+        border: 12px solid #d4511a;
+        padding: 24px 16px;
+        border-radius: 24px;
+        background: linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #ffc700 100%);
+    }
+
+    .inner-border {
+        padding: 12px 10px;
+    }
+
+    .bell {
+        font-size: 42px;
+    }
+
+    .bell-top-left,
+    .bell-top-right {
+        top: 8px;
+    }
+
+    .bell-bottom-left,
+    .bell-bottom-right {
+        bottom: 12px;
+        font-size: 40px;
+    }
+
+    .bell-top-left,
+    .bell-bottom-left {
+        left: 14px;
+    }
+
+    .bell-top-right,
+    .bell-bottom-right {
+        right: 14px;
+    }
+
+    .ganesh-section {
+        margin-bottom: 16px;
+        padding-bottom: 12px;
+    }
+
+    .ganesh-image {
+        width: 100px;
+        height: 100px;
+        border: 4px solid #ffb700;
+        padding: 8px;
+    }
+
+    .mantras-section {
+        margin-bottom: 16px;
+        padding-bottom: 12px;
+    }
+
+    .mantra {
+        font-size: 18px;
+        letter-spacing: 0.6px;
+        margin: 6px 0;
+        line-height: 1.5;
+    }
+
+    .title-section {
+        margin: 14px 0 16px 0;
+        padding: 8px 0;
+    }
+
+    .title {
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+        line-height: 1.3;
+    }
+
+    .content-section {
+        margin-bottom: 14px;
+        margin-top: 14px;
+        padding: 0 8px;
+    }
+
+    .introduction {
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 14px;
+    }
+
+    .event-name {
+        font-size: 22px;
+        margin: 8px 0;
+    }
+
+    .event-details {
+        padding: 12px 14px;
+        margin: 12px auto;
+        max-width: 100%;
+    }
+
+    .detail-item {
+        font-size: 16px;
+        margin: 9px 0;
+        gap: 6px;
+    }
+
+    .detail-label {
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    .detail-value {
+        font-size: 16px;
+    }
+
+    .venue-text {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-top: 4px;
+    }
+
+    .hosts-section {
+        padding: 12px 12px;
+        margin: 12px auto;
+        max-width: 100%;
+    }
+
+    .hosts-label {
+        font-size: 17px;
+        margin-bottom: 6px;
+        font-weight: 700;
+    }
+
+    .hosts-name {
+        font-size: 17px;
+        letter-spacing: 0.2px;
+    }
+
+    .request-box {
+        font-size: 16px;
+        padding: 12px 12px;
+        margin: 14px auto;
+        line-height: 1.6;
+        max-width: 100%;
+    }
+
+    .button-section {
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
+
+    .map-button {
+        padding: 12px 26px;
+        font-size: 16px;
+        border-radius: 12px;
+    }
+}
+
+/* ===== EXTRA SMALL DEVICES (max-width: 360px) ===== */
+@media (max-width: 360px) {
+    .invitation-card {
+        border: 10px solid #d4511a;
+        padding: 20px 12px;
+        border-radius: 20px;
+    }
+
+    .bell {
+        font-size: 36px;
+    }
+
+    .ganesh-image {
+        width: 90px;
+        height: 90px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .mantra {
+        font-size: 16px;
+    }
+
+    .event-name {
+        font-size: 20px;
+    }
+
+    .introduction {
+        font-size: 15px;
+    }
+
+    .detail-label {
+        font-size: 16px;
+    }
+
+    .detail-value,
+    .venue-text {
+        font-size: 15px;
+    }
+
+    .hosts-label,
+    .hosts-name {
+        font-size: 16px;
+    }
+
+    .request-box {
+        font-size: 15px;
+    }
+
+    .map-button {
+        padding: 10px 22px;
+        font-size: 15px;
+    }
+}

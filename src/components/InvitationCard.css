@@ -328,9 +328,9 @@
         border-radius: 28px;
         background: linear-gradient(135deg, #f2f2f2 0%, #e6e6e6 60%, #d4d0c8 100%);
         border: 16px solid #9f7a32;
-        box-shadow:
+        /* box-shadow:
         0 0 0 6px #ffffff inset,
-        0 16px 42px rgba(0, 0, 0, 0.30);
+        0 16px 42px rgba(0, 0, 0, 0.30); */
     }
 
     .inner-border {
@@ -461,9 +461,9 @@
         border-radius: 24px;
         background: linear-gradient(135deg, #f2f2f2 0%, #e6e6e6 60%, #d4d0c8 100%);
         border: 16px solid #9f7a32;
-        box-shadow:
+        /* box-shadow:
         0 0 0 6px #ffffff inset,
-        0 16px 42px rgba(0, 0, 0, 0.30);
+        0 16px 42px rgba(0, 0, 0, 0.30); */
     }
 
     .inner-border {
